@@ -403,6 +403,9 @@ def early_game(time) -> None:
                         blue.deaths += 1
                         red.kills += 1
                         print(f"{blue.getrole(lane)}: Blue gank...Traded")
+                    else:
+                        print(f"{blue.getrole(lane)}: Blue gank...Nothing")
+                    
             # Red gank
             else:
                 redjg: Player = red_players[1]
@@ -428,6 +431,9 @@ def early_game(time) -> None:
                         red.deaths += 1
                         blue.kills += 1
                         print(f"{red.getrole(lane)}: Red gank...Traded")
+                    else:
+                        print(f"{red.getrole(lane)}: Red gank...Nothing")
+                    
 
                 # End of possible gank outcomes
                 
