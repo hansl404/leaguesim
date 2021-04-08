@@ -21,4 +21,4 @@ class Player:
     
     def buyitems(self) -> None:   
         """modify roll stat"""
-        self.roll_mod = self.kills * 1.4   # changing this number increases the "snowball" factor, higher number = team with more kills having way bigger chance to win and getting more kills
+        self.roll_mod = self.kills * 0.7 + self.assists * 0.1   # changing this number increases the "snowball" factor, higher number = team with more kills having way bigger chance to win and getting more kills

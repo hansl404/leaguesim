@@ -387,22 +387,29 @@ def early_game(time) -> None:
                     blue.kills += 1
                     bluejg.assists += 1
                     red.deaths += 1
+                    print(f"{blue.getrole(lane)}: Blue gank...Success (Blue gets 1)")
                     if lane == 4:     # is support is the role getting ganked, the jg gets the kill
                         blue.kills -= 1
                         blue.assists += 1
                         blue_players[1].kills += 1
-                        print(f"{blue.getrole(lane)}: Blue gank...Success")
-                                
+                                           
                 elif blue.roll + bluejg.roll < red.roll:  # blue gank fail
                     if red.roll >= 9:  # red gets 2 (after rolling 9 or 10)
                         blue.deaths += 1
                         bluejg.deaths += 1
                         red.kills += 2
-                        print(f"{blue.getrole(lane)}: Blue gank...Blunder!")
-                    elif red.roll >= 7:  # red gets 1 (after rolling 7 or 8)
+                        print(f"{blue.getrole(lane)}: Blue gank...Blunder! (Red gets 2)")
+                    elif red.roll >= 8:  # red gets 1 (after rolling 7 or 8)
                         blue.deaths += 1
                         red.kills += 1
-                        print(f"{blue.getrole(lane)}: Blue gank...Traded")
+                        print(f"{blue.getrole(lane)}: Blue gank...Fail! (Red gets 1)")
+                    elif red.roll >= 7:
+                        blue.deaths += 1
+                        red.deaths += 1
+                        red.kills += 1
+                        bluejg.kills += 1
+                        blue.assists += 1
+                        print(f"{blue.getrole(lane)}: Blue gank...Traded (Red gets 1, Blue gets 1)")
                     else:
                         print(f"{blue.getrole(lane)}: Blue gank...Nothing")
                     
@@ -414,23 +421,29 @@ def early_game(time) -> None:
                     red.kills += 1
                     redjg.assists += 1
                     blue.deaths += 1
+                    print(f"{red.getrole(lane)}: Red gank...Success (Red gets 1)")
                     if lane == 4:   # if support is the one getting ganked, jg picks up the kill
                         red.kills -= 1
                         red.assists += 1
                         red_players[1].kills += 1
-                        print(f"{red.getrole(lane)}: Red gank...Success")
                             
                 elif red.roll + redjg.roll < blue.roll:  # red gank fail
                     if blue.roll >= 9:  # blue gets 2
                         red.deaths += 1
                         redjg.deaths += 1
                         blue.kills += 2
-                        print(f"{red.getrole(lane)}: Red gank...Blunder!")
-
-                    elif blue.roll >= 7:  # blue gets 1
+                        print(f"{red.getrole(lane)}: Red gank...Blunder! (Blue gets 2)")
+                    elif blue.roll >= 8:  # blue gets 1
                         red.deaths += 1
                         blue.kills += 1
-                        print(f"{red.getrole(lane)}: Red gank...Traded")
+                        print(f"{red.getrole(lane)}: Red gank...Fail! (Blue gets 1)")
+                    elif blue.roll >= 7:
+                        red.deaths += 1
+                        blue.deaths += 1
+                        blue.kills += 1
+                        redjg.kills += 1
+                        red.assists += 1
+                        print(f"{red.getrole(lane)}: Red gank...Traded (Blue gets 1, Red gets 1)")
                     else:
                         print(f"{red.getrole(lane)}: Red gank...Nothing")
                     
