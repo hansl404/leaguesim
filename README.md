@@ -29,7 +29,7 @@ ADC: Blue solokill
 
 SUP: Red gank...Blunder! (Blue gets 2)
 \
-\
+&nbsp;
 TOP: john: 0/2/0  vs:  bill: 2/0/0
 
 JG : smith: 0/0/3  vs:  player: 1/1/3
