@@ -24,14 +24,22 @@ LeagueSim is a random text-based scenario simulator resembling League of Legends
 9 min:
 
 MID: Red gank...Success (Red gets 1)
+
 ADC: Blue solokill
+
 SUP: Red gank...Blunder! (Blue gets 2)
 
+
 TOP: john: 0/2/0  vs:  bill: 2/0/0
+
 JG : smith: 0/0/3  vs:  player: 1/1/3
+
 MID: jane: 1/2/0  vs:  randoguy: 2/1/0
+
 ADC: doe: 3/1/0  vs:  mundo: 1/3/0
+
 SUP: joe: 2/1/0  vs:  me: 0/1/1
+
 
 - For each laning phase event, 1 of 3 things will happen for each of the 5 lanes (top, jg, mid, adc, sup): nothing, solokill, or gank. 
 - If the event is "solokill", one laner will randomly gain a kill while the other corresponding laner will gain a death. If the lane that this happens is support, the ADC's will get the kill instead.
@@ -50,14 +58,21 @@ SUP: joe: 2/1/0  vs:  me: 0/1/1
 19 min: 
 
 Teamfight!
+
 Red 4, Blue 0
+
 1 towers taken
 
 TOP: john: 2/5/1  vs:  bill: 4/2/4
+
 JG : smith: 0/2/5  vs:  player: 4/1/8
+
 MID: jane: 2/4/2  vs:  randoguy: 4/2/9
+
 ADC: doe: 3/4/0  vs:  mundo: 4/3/5
+
 SUP: joe: 3/3/1  vs:  me: 2/2/8
+
 
 - Just like how "early" events have nothing, solokill, or gank, "late" game events are: pick, fight, and baron. 
 - If the event is "pick" one random player from the team with the lower total roll will receive a death and one random player from the team with the higher roll will pick up a kill with a random number of players on the team with the higher roll receiving assists. After scores are calculated, the team that won the higher roll will destroy between 0-1 enemy towers.
