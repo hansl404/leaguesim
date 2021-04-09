@@ -1,6 +1,6 @@
 # Random League Simulator
 
-LeagueSim is a random text-based scenario simulator resembling League of Legends. The idea was inspired by BrantSteele's Hunger Games Simulator (https://brantsteele.net/hungergames/disclaimer.php). While this simulator has been pretty accurate in resembling scores of a normal League game, I hope to clean up the code and add some new features as I learn more about Python. 
+LeagueSim is a random text-based scenario simulator resembling League of Legends. The idea was inspired by BrantSteele's Hunger Games Simulator (https://brantsteele.net/hungergames/disclaimer.php). While this simulator has been pretty accurate in resembling scores of a normal League game from my experience, I hope to clean up the code and add some new features as I learn more about Python. 
 
 ## How to play
 - Upon running, press enter to confirm playing and enter the names of the players in scoreboard order: 
@@ -28,9 +28,8 @@ MID: Red gank...Success (Red gets 1)
 ADC: Blue solokill
 
 SUP: Red gank...Blunder! (Blue gets 2)
-
-
-
+\
+\
 TOP: john: 0/2/0  vs:  bill: 2/0/0
 
 JG : smith: 0/0/3  vs:  player: 1/1/3
