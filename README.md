@@ -29,6 +29,8 @@ ADC: Blue solokill
 
 SUP: Red gank...Blunder! (Blue gets 2)
 
+---------------------------------------
+
 TOP: john: 0/2/0  vs:  bill: 2/0/0
 
 JG : smith: 0/0/3  vs:  player: 1/1/3
@@ -62,6 +64,7 @@ Red 4, Blue 0
 
 1 towers taken
 
+--------------------------------------
 
 TOP: john: 2/5/1  vs:  bill: 4/2/4
 
